@@ -79,7 +79,7 @@ const App = () => {
     } else {
       const totalMedalSum = gold+silver+bronze;
       event.preventDefault();
-      const countryinfo = {
+      const countryInfo = {
         id: new Date().getTime(),
         country,
         gold,
@@ -90,7 +90,7 @@ const App = () => {
 
       // 저장된 배열의 객체들이 테이블에 나타날 때, 금메달 숫자에 따라
       // 내림차순으로 정렬된다.
-      const sortInfo = [...countryMedalInfo, countryinfo].sort((a, b) => b.gold - a.gold);
+      const sortInfo = [...countryMedalInfo, countryInfo].sort((a, b) => b.gold - a.gold);
       alert("국가 메달 정보 리스트 추가 완료!");
       
       // localStorage에 정렬된 배열을 저장한다
